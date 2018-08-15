@@ -28,12 +28,6 @@ class RafflePicker extends Component {
   componentWillMount() {
     const previousData = this.state.participantsData;
 
-    if (document.cookie.indexOf('submittedRaffle=true') >= 0) {
-      this.setState({
-        submitSuccessful: true
-      });
-    }
-
     // DataSnapshot
     this.database.on('child_added', snap => {
       previousData.push({

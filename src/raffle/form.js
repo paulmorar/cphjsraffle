@@ -29,6 +29,14 @@ class RaffleForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentWillMount() {
+    if (document.cookie.indexOf('submittedRaffle=true') >= 0) {
+      this.setState({
+        submitSuccessful: true
+      });
+    }
+  }
+
   setCookie() {
     const expiryDate = new Date();
     expiryDate.setDate(expiryDate.getDate() + 1);
