@@ -109,7 +109,7 @@ class RaffleForm extends Component {
                 <Button
                   onClick={this.handleSubmit}
                   variant="contained"
-                  color="primary"
+                  color="secondary"
                   className="app__body__input"
                 >
                   Submit

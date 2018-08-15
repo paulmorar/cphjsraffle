@@ -103,7 +103,7 @@ class RafflePicker extends Component {
           <Button
             onClick={this.handleRaffle}
             variant="contained"
-            color="primary"
+            color="secondary"
           >
             Raffle
           </Button>
