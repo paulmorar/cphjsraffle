@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import 'firebase/database';
 import RaffleForm from './raffle/form';
 import RafflePicker from './raffle/picker';
